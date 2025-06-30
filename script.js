@@ -31,6 +31,12 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 });
 
 // 🎠 Carousel image rotation
+window.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.carousel-image');
+    if (slides.length > 0) {
+        slides[0].classList.add('active');
+    }
+});
 const slides = document.querySelectorAll('.carousel-image');
 let index = 0;
 
