@@ -80,14 +80,16 @@ footer {
     width: 100%;
     height: auto;
     overflow: hidden;
+    height: 300px;
 }
 
 .carousel-image {
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     height: auto;
-    opacity: 0;
+    /*opacity: 0;*/
     transition: opacity 1s ease-in-out;
+    pointer-events: none;
 }
 
 .carousel-image.active {

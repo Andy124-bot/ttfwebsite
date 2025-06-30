@@ -26,4 +26,14 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     }
 
     alert("Thank you for submitting your details");
+    document.getElementById("contactForm").reset();
+
+    const slides = document.querySelectorAll('.carousel-image');
+    let index = 0;
+
+    setInterval(() => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+    }, 4000);
 });
