@@ -83,12 +83,12 @@ footer {
 }
 
 .carousel-image {
-    /*position: absolute;*/
+    position: absolute;
     width: 100%;
-    height: auto;
-    /*opacity: 0;*/
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
     transition: opacity 1s ease-in-out;
-    pointer-events: none;
 }
 
 .carousel-image.active {
